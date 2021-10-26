@@ -2,10 +2,9 @@
 
 <h1>Concatenação</h1>
 <script>
-<card>
   document.write("A idade da Lauren é "+(2+2));
   document.write("<br>")
-  document.write("18"+"20");
+  document.write("A Lauren tem :"+(2021-2017)+" anos");
   document.write("<br>")
   document.write("18 "+20);
   document.write("<br>")
@@ -14,5 +13,48 @@
   document.write("<br>")
   document.write("A média das idades do Chris e da Lauren é : "+((5+6)/2)+"<br>");
   document.write("A diferença de idade do Chris e da Lauren é : "+(6-4)+"<br>");
-</card>  
+</script>
+
+<h1>Reduzindo alterações</h1>
+
+
+<script>
+  var ano = 2021;
+  document.write("A Lauren tem : "+(ano-2017)+" anos"+"<br>");
+  ano=2022;
+  document.write("A Fernando tem : "+(ano-1992)+" anos"+"<br>");
+  document.write("A Frida tem : "+(ano-2018)+" anos");
+</script>
+
+<h1>Variáveis</h1>
+Math.round arredonda o número
+<br>
+
+<script>
+  var idadeFernando=29;
+  var idadeLauren= 4;
+  var idadeChris=6;
+  var media = (idadeFernando+idadeLauren+idadeChris)/3;
+
+  document.write("A média das idades é "+Math.round(media));
+
+  var nome= "Lauren";
+
+  document.write("<br>"+"A idade de "+ nome + " é "+ idadeLauren);
+
+</script>
+<h1>Melhorando a manutenção do código</h1>
+
+<script>
+  var idadeFernando=29;
+  var idadeLauren= 4;
+  var idadeChris=6;
+  var media = (idadeFernando+idadeLauren+idadeChris)/3;
+  var nome= "Lauren";
+  var pulaLinha ="<br><br><br><br>";
+
+  document.write("A média das idades é "+Math.round(media));
+  document.write(pulaLinha);
+  document.write("A idade de "+ nome + " é "+ idadeLauren);
+
 </script>
